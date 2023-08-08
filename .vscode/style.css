@@ -1,0 +1,131 @@
+/* font-family: 'Jura', sans-serif;
+font-family: 'Orbitron', sans-serif; */
+
+*{
+    font-family: 'Jura', sans-serif; 
+    color: white;
+}
+
+h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 80px;
+}
+
+h2{
+    color: #2b9df4;
+}
+
+
+/* CSS NAVBAR */
+li{
+    opacity: 0.6;
+}
+
+.border-navbar{
+    border-bottom: 1px solid white;
+}
+/* FINE CSS NAVBAR */
+
+/* INIZIO CSS HEADER */
+
+.bg-header{
+    background-image: linear-gradient(rgba(0, 0, 0,1), rgba(255, 255, 255,0),rgba(0, 0, 0,1)), url(./media/moon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* FINE CSS HEADER */
+
+/* INIZIO MAIN */
+.border-card{
+    border-bottom: 1px solid #2b9df4;
+}
+
+.numeri{
+    font-size: 60px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.moon-size{
+    height: 100%;
+    width: 100%;
+}
+
+.pt-h3{
+    padding-top: 80px;
+}
+
+.razzo-custom{
+    height: 1000px;
+    width: 50%;
+}
+
+@media screen and (max-width:767px) {
+    .razzo-custom{
+        display: none;
+    }
+}
+
+/* @media screen and (max-widht:767px) {
+    .mq-razzo{
+        display: none;
+    }
+} */
+
+.padding-paragrafo-razzo{
+padding-bottom: 250px;
+}
+
+.button-direction{
+    display: flex;
+    justify-content: end;
+}
+
+
+.a-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    color: white;
+    border: 3px solid #2b9df4;
+    position: relative;
+}
+
+.a-button::before, .a-button::after {
+    position: absolute;
+    z-index: 999;
+    content: '';
+  }
+
+  .a-button::before {
+    height: 50px;
+    width: 130px;
+    border: 3px solid black;
+  }
+  
+  .a-button::after {
+    width: 150px;
+    height: 30px;
+    border: 3px solid black;
+  }
+/* FINE MAIN */
+
+/*  INIZIO FOOTER */
+.bg-image-footer{
+    background-image:linear-gradient(rgba(0, 0, 0,1) , rgba(255, 255, 255, 0), rgba(0, 0, 0,1) ), url(./media/sunrise-1765027_1920.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.border-finale{
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(90deg, rgba(0,0,0,0.9248074229691877) 20%, rgba(43,157,244,1) 50%, rgba(0,0,0,0.9192051820728291) 80%);
+    border-image-slice: 1;
+    width:100%;
+}
+
+/* FINE FOOTER */
